@@ -12,8 +12,12 @@
 
 <body>
   <div class="container">
+    <div class="jumbotron">
     <h1>Bill Calculator</h1>
-    <h3>Electricity Bill</h3>
+  </div>
+
+  <div class=""
+    <h3>Water Bill</h3>
     <form class="form-group">
       <div class="form-group col-md-4">
         <label for="bill">Amount to be shared: GH¢</label>
@@ -27,15 +31,16 @@
 
       <div class="form-group col-md-4">
         <label for="process">Method for sharing</label>
-        <select class="form-control" name="process">
-          <option>Number of people per household</option>
-          <option>Electrical Appliance owned per household</option>
-          <option>Both</option>
+        <select id="mySelect" class="form-control" name="process">
+          <option value="one">Number of people per household</option>
+          <option value="two">Electrical Appliance owned per household</option>
+          <option value="three">Both</option>
         </select>
       </div>
 
       <div id="enter1" class="form-group">
         <input class="btn btn-default btn1" type="submit" value="Enter"name="enter">
+        <input id="btn3" class="btn btn-success" type="submit" value="clear"name="enter">
       </div>
     </form>
       </div>
@@ -47,6 +52,7 @@
       </div>
       <div id="btn2" class="form-group">
         <input class="btn btn-danger" type="submit" value="Calculate" name="calculate">
+        <input id="btn4" class="btn btn-success" type="submit" value="clear"name="clear">
       </div>
 
   </div>
