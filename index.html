@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Bill Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bill Calculator</h1>
+    <h3>Electricity Bill</h3>
+    <form class="form-group">
+      <div class="form-group col-md-4">
+        <label for="bill">Amount to be shared: GH¢</label>
+        <input class="form-control" type="number" name="bill">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="household">Number of households sharing the Bill</label>
+        <input id="noHousehold" class="form-control" type="number" name="household">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="process">Method for sharing</label>
+        <select class="form-control" name="process">
+          <option>Number of people per household</option>
+          <option>Electrical Appliance owned per household</option>
+          <option>Both</option>
+        </select>
+      </div>
+
+      <div id="enter1" class="form-group">
+        <input class="btn btn-default btn1" type="submit" value="Enter"name="enter">
+      </div>
+    </form>
+      </div>
+
+
+    <div id="identifier" class="container">
+      <h4>Enter identifier of households and number of people per household</h4>
+      <div id="householdInfo">
+      </div>
+      <div id="btn2" class="form-group">
+        <input class="btn btn-danger" type="submit" value="Calculate" name="calculate">
+      </div>
+
+  </div>
+
+
+</body>
+
+</html>
