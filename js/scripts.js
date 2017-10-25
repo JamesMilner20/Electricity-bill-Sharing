@@ -22,15 +22,20 @@ $(document).ready(function() {
   $("#btn2").click(function(event) {
     event.preventDefault();
 
+
     var nos = $("input.bill");
     var total = 0;
     for (var i = 0; i < nos.length; i++) {
-      total += parseInt(nos[i].value);
+    total = total + parseInt(nos[i].value);
+  };
+    var amount = parseInt($("input.amount").val())
 
-    $(".output").append('<p>Household '+i+' Owes:'+'</p>'+
-      i+10
-    );
-}
-
-  });
-});
+    for (var i = 0; i < nos.length; i++) {
+      x = nos[i].value;
+      householdNumber = i + 1;
+        $(".output").append('<p>Household '+householdNumber+' Owes:'+'</p>'+
+          total
+          );
+        };
+      });
+    });
