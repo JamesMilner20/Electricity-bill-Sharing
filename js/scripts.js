@@ -22,6 +22,15 @@ $(document).ready(function() {
   $("#btn2").click(function(event) {
     event.preventDefault();
 
-    var nos = $("input.bill")
+    var nos = $("input.bill");
+    var total = 0;
+    for (var i = 0; i < nos.length; i++) {
+      total += parseInt(nos[i].value);
+
+    $(".output").append('<p>Household '+i+' Owes:'+'</p>'+
+      i+10
+    );
+}
+
   });
 });
