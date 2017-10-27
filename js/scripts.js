@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#enter1").click(function(event) {
+    $("#enter1").addClass("animated shake");
     event.preventDefault();
 
     var item = $("#mySelect").val();
@@ -50,7 +51,7 @@ $(document).ready(function() {
     $("#identifier").empty();
     $("#output").empty();
   });
-  
+
   $("#btn4").click(function(event) {
     event.preventDefault();
     $("#output").empty();
